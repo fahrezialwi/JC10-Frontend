@@ -1,0 +1,48 @@
+/* Selector */
+
+/* Semua tag h1 */
+h2 {
+    color: aquamarine
+}
+
+/* Semua tag p */
+p {
+    color: aqua
+}
+
+/* Warna */
+#red {
+    color: red
+}
+
+.blue {
+    color: blue
+}
+
+ [name] {
+     border: 2px solid black
+ }
+
+ #corn {
+     color: cornflowerblue
+ }
+
+ #rgb {
+     color: rgb(100,50,100)
+ }
+
+ #rgba {
+    color: rgba(100,50,100, 0.5)
+ }
+
+ #hex {
+    color: #ca2f2f
+ }
+
+ #hsl {
+    color: hsl(90, 47%, 38%)
+ }
+
+ #hsla {
+    color: hsla(90, 47%, 38%, 0.4)
+ }
