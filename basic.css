@@ -1,48 +1,151 @@
 /* Selector */
 
-/* Semua tag h1 */
+/* Semua tag H2 */
+/* 
+    color: property
+    aquamarine: value
+*/
 h2 {
     color: aquamarine
 }
 
-/* Semua tag p */
+/* Semua tag Paragraph */
 p {
     color: aqua
 }
 
-/* Warna */
+/* ID */
+/* Sebuah tag yg memiliki ID : red */
 #red {
     color: red
 }
 
-.blue {
-    color: blue
+/* Class */
+/* Semua tag yg memiliki class: peringatan */
+.peringatan {
+    color: crimson
 }
 
- [name] {
-     border: 2px solid black
- }
+/* Attribute */
+/* Semua tag yang memiliki attribute 'name' */
+[name] {
+    border: 2px solid #2999e4
+}
 
- #corn {
-     color: cornflowerblue
- }
+/* Semua tag yang memiliki attribute 'name' dengan value 'gender*/
+[name='gender'] {
+    border: 2px solid #2999e4
+}
 
- #rgb {
-     color: rgb(100,50,100)
- }
+/* Option Color */
+#corn {
+    background-color: cornflowerblue;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(172, 33, 207);
+    
+}
 
- #rgba {
-    color: rgba(100,50,100, 0.5)
- }
+/* Red Green Blue : 0 - 255 */
+#rgb {
+    background-color: rgb(213, 235, 17);
+    border : 5px solid rgb(172, 33, 207)
+}
 
- #hex {
-    color: #ca2f2f
- }
+/* Red Green Blue : 0 - 255 */
+/* Alpha  : 0 - 1 */
+#rgba {
+    background-color: rgba(12, 240, 88, 0.3)
+}
+/* Hex : 0 - 9 dilanjutkan A - F */
+/* RRGGBB */
+#hex {
+    background-color: #bb55ee;
+}
 
- #hsl {
-    color: hsl(90, 47%, 38%)
- }
+#hsl {
+    background-color: hsl(310, 100%, 50%)
+}
 
- #hsla {
-    color: hsla(90, 47%, 38%, 0.4)
- }
+#hsla {
+    background-color: hsla(106, 100%, 50%, 0.9)
+}
+
+/* Background */
+/* Semua tag div yang ada di dalam tag div dengan class box-container */
+div.box-container div {
+    width: 500px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 23px;
+    margin: 7px
+}
+
+#background-color {
+    background-color: antiquewhite
+}
+
+#background-image {
+    background-image: url('./files/pictures/logo.png');
+    background-repeat: no-repeat
+}
+
+#background-position {
+    background-image: url('./files/pictures/logo-css-150x150.png');
+    background-repeat: no-repeat;
+    background-position: 100px 50px;
+    /* 
+        background-position :
+        - bottom right , kanan bawah
+        - 100px 50px , 100px dari sebelah kiri, 50px dari atas
+    */
+}
+
+#background-size {
+    background-image: url('./files/pictures/Logo-Css-720x720.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* 
+        jika background-size diberi : 
+        - 1 nilai , ini akan menjadi nilai width, heightnya akan mengikuti
+        - 2 nilai, nilai pertama akan jadi width, nilai kedua akan jadi height
+        - contain, browser berusaha menampilkan satu gambar penuh / utuh'
+        - cover, browser akan membuat gambar memenuhi lebar element
+    */
+}
+
+#background-attachment {
+    background-image: url('./files/pictures/logo-css-150x150.png');
+    background-attachment: fixed;
+    /* 
+        background-attachment: fixed, local, scroll (default)
+    */
+}
+
+#background-shorthand {
+    /* 
+        urutan : image, position / size, attachment, color
+    */
+    background: url('./files/pictures/logo-css-300x300.png') center center fixed red
+
+}
+
+ /* Font */
+p#font {
+    /* Warna teks */
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px; /* em, rem */
+    font-style: italic; /* normal, oblique */
+    text-transform: uppercase; /* capitalize lowercase none */
+    text-decoration: underline; /* overline line-through none */
+    text-align: center /* left, right */
+}
+
+#google-font {
+    font-family: 'Beth Ellen';
+    font-size: 25px;
+    text-align: center
+}
