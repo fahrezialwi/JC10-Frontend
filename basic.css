@@ -149,3 +149,95 @@ p#font {
     font-size: 25px;
     text-align: center
 }
+
+/* BOX MODEL */
+/* WIDTH & HEIGHT */
+div.width-height {
+    background-color: #bb55ee;
+    color: white;
+    width: 500px;
+    height: 300px;
+    line-height: 300px;
+    font-weight: bold
+
+    /* 
+        - width & hieght hanya berlaku pada block level element
+        - % akan memiliki lebar sekian persen dari lebar parent
+        - em tergantung dari font-size element tersebut 
+        - rem tergantung dari font-size 'root' dari element tersebut
+    */
+}
+
+span.width {
+    background-color: aqua;
+    width: 300px
+}
+
+/* Padding */
+/* Jarak dari konten ke border / sisi element */
+
+.box {
+    color: white;
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.padding-one {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    background-color: fuchsia
+}
+
+.padding-two {
+    padding: 20px;
+    background-color: rgb(53, 148, 172)
+}
+
+.padding-three {
+    background-color: darkorchid
+}
+
+.padding-sizing {
+    box-sizing: borderbox;
+    padding: 10px;
+    background-color: hotpink;
+    overflow: auto
+}
+
+div#box-margin div {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div#box-margin {
+    margin-top: 20px;
+}
+
+/* 
+- Margin collapse terjadi pada sisis vaertikal
+- ketika bertemu top dan bottom dari 2 elemen, maka akan diambil margin yang nilainya terbesar
+*/
+
+#margin-1 {
+    margin-top: 20px;
+    background-color: chartreuse
+}
+
+#margin-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255,155,0)
+}
+
+#margin-3 {
+    margin: 10px 20px 10px 20px;
+    background-color: rgb(20,218,201)
+}
