@@ -1,2 +1,3 @@
-# JC10-Frontend
-Purwadhika materi frontend
+# JC10 Frontend
+
+Purwadhika materi front-end
